@@ -1,0 +1,39 @@
+<h3>Varargs</h3>
+<img src="resources/es6.png" alt="ES6" class="emblem">
+
+<div class="flex">
+    <pre class="col"><code class="lang-Typescript hljs" data-trim>
+//TypeScript
+
+function buyNewCar(brand: string,
+    ...features: string[]) {
+    console.log(`${brand}
+      with features: ${features.join(', ')}`);
+}
+
+buyNewCar('Tesla',
+    'Leather seats', 'Blue painting');
+
+// => "Tesla with features:
+//    Leather seats, Blue painting"
+</code></pre>
+
+    <pre class="col"><code class="lang-Javascript hljs" data-trim>
+//Javascript
+
+function buyNewCar(brand) {
+    var features = [];
+    for (var _i = 1; _i <
+        arguments.length; _i++) {
+        features[_i - 1] = arguments[_i];
+    }
+    console.log(brand +
+    'with features: ' + features.join(', '));
+}
+buyNewCar('Tesla', 'Leather seats', 'Blue painting');
+</code></pre>
+</div>
+
+<ul>
+    <li><em>Varargs parameters</em> should be placed after required parameters</li>
+</ul>

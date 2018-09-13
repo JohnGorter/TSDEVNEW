@@ -1,0 +1,42 @@
+<h2>Namespaces</h2>
+<img src="resources/es6.png" alt="ES6" class="emblem">
+
+<p>Namespaces can be used to organize and group the functionality on the <em>global object</em>.</p>
+
+<div class="flex fragment">
+    <pre><code class="lang-Typescript hljs" data-trim data-noescape>
+// TypeScript
+namespace validation {
+    export function firstName() {
+        // Todo
+    }
+    export function lastName() {
+        // Todo
+    }
+}
+
+class RegisterUser {
+    validate = validation.firstName();
+}
+</code></pre>
+<pre class="col"><code class="lang-javascript hljs" data-trim data-noescape>
+// JavaScript
+var validation;
+(function (validation) {
+    function firstName() {
+        // Todo
+    }
+    validation.firstName = firstName;
+    function lastName() {
+        // Todo
+    }
+    validation.lastName = lastName;
+})(validation || (validation = {}));
+
+class RegisterUser {
+    constructor() {
+        this.validate = validation.firstName();
+    }}
+    </code></pre>
+</div>
+

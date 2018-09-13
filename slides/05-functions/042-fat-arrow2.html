@@ -1,0 +1,46 @@
+<h3>Fixing <code>this</code></h3>
+<img src="resources/es6.png" alt="ES6" class="emblem">
+
+Let's fix <code>this</code> using <code>()=></code>.
+
+<div class="flex">
+    <pre class="col"><code class="lang-Typescript hljs" data-trim data-noescape>
+
+// TypeScript
+
+var car = {
+    all: ['Model S', 'Golf'],
+    selected: '',
+    select(carType: string) {
+        this.all.forEach(<mark>(t) =></mark>  {
+            if (t === carType) {
+                this.selected = t;
+            }
+         });
+    }
+};
+
+car.select('Model S')
+car.selected); // => "Model S"
+window['selected']); // => "undefined"
+</code></pre>
+<pre class="col"><code class="lang-javascript hljs" data-trim data-noescape>
+// JavaScript
+
+var car = {
+    all: ['Model S', 'Golf'],
+    selected: '',
+    select: function (carType) {
+        <mark>var _this = this;</mark>
+        this.all.forEach(function (t) {
+            if (t === carType) {
+                <mark>_this</mark>.selected = t;
+            }
+        });
+    }
+};
+
+    </code></pre>
+</div>
+
+<p class="fragment"><strong>Rule of thumb</strong>: when in doubt, use arrow functions</p>

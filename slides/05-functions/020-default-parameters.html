@@ -1,0 +1,36 @@
+<h2>ES2015 features</h2>
+
+<h3>Default arguments</h3>
+
+<img src="resources/es6.png" alt="ES6" class="emblem">
+
+<p>You can now use default parameters using <code>=</code></p>
+
+<div class="flex">
+    <div class="col">
+        <pre><code class="lang-Typescript hljs" data-trim>
+// TypeScript
+
+function hello(message = 'world') {
+    console.log('Hello ' + message);
+}
+</code></pre>
+    </div>
+    <div class="col">
+        <pre><code class="lang-Javascript hljs" data-trim>
+// Javascript
+
+function hello(message) {
+    if (message === void 0) {
+        message = 'world';
+    }
+    console.log('Hello ' + message);
+}
+</code></pre>
+    </div>
+
+</div>
+
+<ul>
+    <li><em>Default parameters</em> should be placed after <em>required parameters</em></li>
+</ul>

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "target": "es5",
+        "noImplicitReturns": true,
+        "strict": true,
+        "strictNullChecks": false, // keeps client code simpler
+        "noFallthroughCasesInSwitch": true,
+        "noEmitOnError": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "lib": [
+            "es5",
+            "dom",
+            "es2015.promise"
+        ],
+        "outFile": "../static/client-bundle.js"
+    }
+}

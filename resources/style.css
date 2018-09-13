@@ -1,0 +1,142 @@
+.reveal img.small-logo {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.reveal img.smaller-logo {
+    max-width: 180px;
+    max-height: 200px;
+}
+
+.reveal .small_quote {
+    font-size: 0.8em;
+}
+
+.reveal .condensed-table {
+    font-size: 0.8em;
+}
+
+.reveal img.img-in-text {
+    vertical-align: middle;
+}
+
+.reveal h1 {
+    color: #fff;
+}
+
+.reveal .col {
+    flex: 1 1 0;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.reveal .flex {
+    display: flex;
+}
+
+.reveal .no-list-style-type {
+    list-style-type: none;
+}
+
+.reveal .facilities-icon-container {
+    color: #00539F;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+.reveal i.icon-big {
+    color: #A80000;
+    font-size: 4em;
+}
+
+.reveal *:not(pre)>code {
+    color: #900;
+    font-size: 0.7em;
+    background-color: #efefef;
+}
+
+.reveal code {
+    font-family: 'Consolas'
+}
+
+.reveal section img {
+    background: none;
+}
+
+.reveal .emblem {
+    right: 30px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+
+.reveal pre code {
+    margin: 0;
+    width: 100%;
+    font-size: .8em;
+}
+
+.reveal .emblem {
+    right: 30px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+
+.reveal .pin-max-height {
+    max-height: 550px;
+}
+
+.reveal .slides section.lab {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 5px 5px white;
+    padding: 0 20px;
+    border-radius: 30px;
+}
+
+.reveal .slides section.lab h2 {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.reveal .pin-height-400 {
+    max-height: 400px;
+}
+
+.reveal .pin-height-100 {
+    max-height: 100px;
+}
+
+.agenda {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    list-style-position: inside;
+}
+
+/* The ribbons */
+
+.corner-ribbon {
+    width: 200px;
+    background: #00539F;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: fixed;
+
+
+    /* top right */
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+

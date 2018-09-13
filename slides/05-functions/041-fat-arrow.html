@@ -1,0 +1,23 @@
+<h3><code>this</code> in functions</h3>
+<img src="resources/es6.png" alt="ES6" class="emblem">
+<code>this</code> keyword is strange in JavaScript.
+
+<div class="flex">
+    <pre><code class="lang-Typescript hljs" data-trim data-noescape>
+var car = {
+    all: ['Model S', 'Golf'],
+    selected: '',
+
+    select(carType: string) {
+        this.all.forEach(<mark>function (t)</mark> {
+            if (t === carType) {
+                this.selected = t;
+            }
+         })
+    }
+}
+
+car.select('Model S')
+car.selected; // => Empty string
+window['selected']; // => "Model S" the `this` points to window.
+</code></pre></div>

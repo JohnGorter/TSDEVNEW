@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": true,
+        "sourceMap": false,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "jsxFactory": "React.createElement",
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    }
+}
