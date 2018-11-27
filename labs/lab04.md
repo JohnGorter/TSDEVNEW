@@ -27,7 +27,7 @@ Create the setup you made last lab.
 ## Exercise 3 - Create bank accounts
 
 1. Create a function `createBankAccount` that creates a new bank account for a customer.
-    * A bank account has 2 properties: `customer` and `backAccount`
+    * A bank account has 2 properties: `customer` and `accountNumber`
     * The customer object should be provided (may be type `any`)
     * It should call `createAccountNumber` to create the account number.
 1. Declare a `bankAccounts` variable without type annotation and initialize it with an array of bank accounts.
