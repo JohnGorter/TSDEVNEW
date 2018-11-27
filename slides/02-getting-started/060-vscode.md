@@ -56,8 +56,6 @@ You can now use **F5** for debugging and **ctrl+F5** for running your applicatio
 
 ### Debug your application
 
-1. Alter the file ".vscode/launch.json".
-    * Set `"sourceMaps"` to `true`
 1. Alter the file "tsconfig.json"
     * Set `"sourceMap"` to `true`
 1. Open "HelloWorld.ts". Set a breakpoint <br />
